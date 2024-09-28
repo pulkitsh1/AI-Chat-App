@@ -1,7 +1,6 @@
 from dotenv import load_dotenv, set_key, dotenv_values
 import os
 import openai
-import argparse
 import typer
 
 
@@ -84,5 +83,8 @@ def ask_gpt(prompt: str, chat_history: list, system_message: str):
     return content
 
 
-if __name__ == "__main__":
+def main():
     app()
+
+if __name__ == "__main__":
+    main()
